@@ -1,0 +1,28 @@
+@require 'jeet'
+@require 'nib'
+@require 'axis'
+
+edit()
+framework()
+
+.u-center
+    text-align center
+
+.u-pull-right
+    float right !important
+
+#t-displayIndex
+    center(960px)
+    .h-Preview-wrapper
+        col(1/2, cycle: 2)
+        +below(700px)
+            stack()
+    .h-Editor-wrapper
+        col(1/2, cycle: 2)
+        +below(700px)
+            stack()
+            margin-top 2em
+        .h-Editor-textarea
+            height auto
+            width 100%
+            padding 0

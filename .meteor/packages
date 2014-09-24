@@ -4,9 +4,9 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-mizzao:bootstrap-3
 rexzh0u:kramed
 mrt:deb
 coffeescript
 sashko:katex
-
+mrt:vue
+cryptoquick:stylus-multi

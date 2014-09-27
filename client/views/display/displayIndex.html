@@ -1,16 +1,14 @@
 <template name="displayIndex">
     <div id="t-displayIndex">
         <div class="h-Preview-wrapper">
-            <div class="h-Preview-preview">
-                &nbsp;
+            <div class="h-Preview-preview" v-html="hPreview">
             </div>
         </div>
         <div class="h-Editor-wrapper">
             <div class="h-Editor-editor">
-                <textarea class="h-Editor-textarea" rows="30" v-model="hEditorContent">
-                </textarea>
+                <textarea class="h-Editor-textarea" rows="30" v-model="hEditorContent"></textarea>
             </div>
-            <button class="h-Editor-button u-pull-right btn-simple btn-small" v-class="disabled: isDisabled" v-text="hEditorButton"></button>
+            <button class="h-Editor-button u-pull-right btn-simple small" v-class="disabled: isDisabled" v-text="hEditorButton"></button>
         </div>
     </div>
 </template>

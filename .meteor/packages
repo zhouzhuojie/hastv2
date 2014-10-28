@@ -7,6 +7,7 @@ meteor-platform
 rexzh0u:kramed
 mrt:deb
 coffeescript
-sashko:katex
 mrt:vue@0.2.0-rc
 cryptoquick:stylus-multi
+simple:katex
+

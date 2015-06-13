@@ -4,9 +4,9 @@
 # but you can also edit it by hand.
 
 meteor-platform
-rexzh0u:kramed
-mrt:deb
 coffeescript
-mrt:vue@0.2.0-rc3
+rexzh0u:kramed
+rexzh0u:katex-cdn
+mrt:deb
+vue:vue
 cryptoquick:stylus-multi
-simple:katex

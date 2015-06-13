@@ -3,7 +3,6 @@ Meteor.startup ->
     katex: true
 
 Template.displayIndex.rendered = ->
-
   vm = new Vue
     el: '#t-displayIndex'
     data:

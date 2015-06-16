@@ -5,6 +5,12 @@ Meteor.startup ->
 Template.displayIndex.rendered = ->
   vm = new Vue
     el: '#t-displayIndex'
+    ready: ->
+      @refreshPreview()
+    watch:
+      'hEditorContent': ->
+        @saving()
+        @refreshPreview()
     data:
       hEditorContent: localStorage.getItem 'lsEditorContent' || '# Make your first hast presentation!'
       hEditorButton: 'saved'
@@ -23,9 +29,3 @@ Template.displayIndex.rendered = ->
             @hPreview = kramed @hEditorContent
             @saved()
         , 500)
-    ready: ->
-      @refreshPreview()
-
-  vm.$watch 'hEditorContent', ->
-    vm.saving()
-    vm.refreshPreview()
